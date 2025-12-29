@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VMaRK Security and Facility Management | India's Trusted Partner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {
+      "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+      "react/": "https://esm.sh/react@^19.2.3/",
+      "react": "https://esm.sh/react@^19.2.3",
+      "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+      "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client"
+    }
+  }
+  </script>
+  <style>
+    body { 
+      background-color: #030712; 
+      margin: 0; 
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: inline-flex;
+      animation: marquee 40s linear infinite;
+      width: fit-content;
+    }
+    .animate-marquee-fast {
+      display: inline-flex;
+      animation: marquee 25s linear infinite;
+      width: fit-content;
+    }
+    .animate-in {
+      animation: animate-in 0.7s ease-out forwards;
+    }
+    @keyframes animate-in {
+      from { opacity: 0; transform: translateY(20px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .fade-in { opacity: 0; }
+    .slide-in-from-bottom-8 { transform: translateY(32px); }
+    .zoom-in { transform: scale(0.95); }
+    
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1f2937;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF6B35;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
